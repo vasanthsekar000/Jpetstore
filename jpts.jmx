@@ -1,3 +1,11 @@
+JMeter path
+JMeter script (.jmx) file path
+JMeter log (.jtl) result file path
+
+
+jmeter.save.saveservice.output_format=csv
+jmeter.save.saveservice.timestamp_format=ms
+jmeter.save.saveservice.print_field_names=true
 <?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
   <hashTree>
@@ -78,7 +86,7 @@
         </RandomVariableConfig>
         <hashTree/>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="usercredentials" enabled="true">
-          <stringProp name="filename">D:/TYSAN/Jenkins_Demo/JpetStore_Script/User_Cr.csv</stringProp>
+          <stringProp name="filename">User_Cr.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">PR_username,PR_password</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
